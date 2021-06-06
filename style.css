@@ -1,0 +1,124 @@
+.container {
+    background-color: #ffe9ff;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.timer {
+    font-family: sans-serif;
+    font-size: 32px;
+    text-align: center;
+    position: absolute;
+    top: 30vh;
+    right: 50vw;
+}
+.img {
+    position: absolute;
+    height: 80px;
+}
+.persona {
+    right: calc(50vw - 75px);
+    top: 100px;
+    /* top: -100px; */
+}
+.persona-movimiento {
+    animation: personaMovimiento 5s;
+}
+.persona-movimiento2 {
+    animation: personaMovimiento2 5s;
+}
+.persona-stop {
+    top: -100px;
+}
+.coche {
+    left: 40vw;
+    animation: animationAuto 1s infinite;
+}
+.coche-detenido {
+    animation: animationStopAuto 2s;
+}
+
+@keyframes animationAuto {
+    0% { left: 0; }
+    100% { left: 100vw; }
+}
+@keyframes animationStopAuto {
+    0% { left: auto; }
+    50% { left: 100vw; }
+    50% { left: 0; }
+    100% { left: 40vw; }
+}
+@keyframes personaMovimiento {
+    /* 0% { top: 100px; } */
+    100% { top: -100px; }
+}
+@keyframes personaMovimiento2 {
+    /* 0% { top: 100px; } */
+    100% { top: 100px; }
+}
+.carretera {
+    border: 1px solid black;
+    background: #000;
+    position: absolute;
+    bottom: 50vh;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+.semaforo {
+    border: 1px solid #fafafa;
+    background: #fafafa;
+    height: 90px;
+    width: 30px;
+    position: absolute;
+    right: 50vw;
+}
+.circulo {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.opaco {
+    opacity: 0.3;
+    box-shadow: none !important;
+}
+.verde {
+    background: #2cac21;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(44,172,33,1); 
+    box-shadow: 0px 0px 20px 0px rgba(44,172,33,1);
+}
+.amarillo {
+    background: #f2e756;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(242,231,86,1); 
+    box-shadow: 0px 0px 20px 0px rgba(242,231,86,1);
+}
+.rojo {
+    background: #dd0d0d;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(221,13,13,0.5); 
+    box-shadow: 0px 0px 20px 0px rgba(221,13,13,0.5);
+}
+
+.camino-peatonal {
+    height: 100px;
+    width: 60px;
+    position: absolute;
+    right: calc(50vw - 65px);
+    overflow: hidden;
+}
+.barra-blanca {
+    background-color: #fafafa;
+    height: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.button {
+    background: blue;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: calc(50vh - 50px);
+    right: 50vw;
+}

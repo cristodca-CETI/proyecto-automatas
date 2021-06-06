@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto autómatas - Cristopher Chavez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer" id="timer">
+            
+        </div>
+        <div class="carretera">
+            <img src="coche.png" id="auto" class="img coche">
+            <div class="semaforo">
+                <div class="circulo verde" id="verde"></div>
+                <div class="circulo amarillo opaco" id="amarillo"></div>
+                <div class="circulo rojo opaco" id="rojo"></div>
+            </div>
+            <div class="camino-peatonal">
+                <div class="barra-blanca"></div>
+                <div class="barra-blanca"></div>
+                <div class="barra-blanca"></div>
+                <div class="barra-blanca"></div>
+                <div class="barra-blanca"></div>
+                <div class="barra-blanca"></div>
+            </div>
+            <img src="persona.png" id="persona" class="img persona">
+        </div>
+        <div class="button" id="button" onclick="start()"></div>
+    </div>
+    <script src="automatas.js"></script>
+</body>
+</html>
